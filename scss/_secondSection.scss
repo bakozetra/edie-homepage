@@ -1,0 +1,84 @@
+.sectionSecond {
+  width: 80%;
+  &__header {
+    width: 220px;
+    max-width: 100%;
+  }
+  &__aside {
+    background: rgba(255, 255, 255, 1);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    box-shadow:3px 3px 5px 6px #ccc ;
+    &--design >.link {
+      background-color: blue;
+    }
+
+    &--front > .link {
+        background-color: yellow;
+        background: rgba(39, 174, 96, 1);
+
+    }
+    &--front > .link + h3 + p + button {
+      background: rgba(45, 156, 219, 1);
+
+    }
+    &--back >.link {
+      background: rgba(235, 87, 87, 1);
+
+    } 
+    
+    &--button {
+      width: 50px;
+      height: 50px;
+      outline: none;
+      border: none;
+      margin-left: 1rem;
+      margin-top: 2rem;
+      border-radius: 10px;
+    }
+    &--button + h3 + p + button {
+      background: rgba(224, 224, 224, 1);
+      outline: none;
+      border: none;
+      width: 116px;
+      height: 42px;
+      border-radius: 12px;
+      margin-left: 1rem;
+      margin-top: 2rem;
+    }
+    &--button + h3 {
+      margin-left: 1rem;
+    }
+    &--button + h3 + p {
+      margin-left: 1rem;
+      font-size: 16px;
+line-height: 24px;
+    }
+
+   }
+   &__aside button_link {
+    
+   }
+
+}
+@media(min-width : 375px) {
+  .sectionSecond {
+    width: 80%;
+    &__container {
+      display: flex;
+    }
+    &__aside {
+      background: rgba(255, 255, 255, 1);
+      margin-left: auto;
+      margin-right: auto;
+      height: 400px;
+      box-shadow:3px 3px 5px 6px #ccc ;
+      border-radius: 10px;
+      width: 300px;
+    }
+
+  }
+  
+}
