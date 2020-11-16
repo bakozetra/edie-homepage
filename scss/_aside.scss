@@ -1,0 +1,35 @@
+.aside {
+  max-width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    &__description {
+      font-size: 24px;
+      
+      &--person {
+        margin-left: 6rem;
+        font-size: 24px;
+      }
+      &--person + p {
+        margin-bottom: 2rem;
+        margin-left: 6rem;
+      }
+    }
+
+    &__description + div img {
+       width: 75px;
+       border-radius: 12px;
+       position: absolute;
+    }
+}
+@media(min-width: 375px) {
+  .aside {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    &__description {
+     width: 50%;
+    }
+  }
+
+}

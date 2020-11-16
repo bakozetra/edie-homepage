@@ -1,0 +1,39 @@
+.footer {
+  background-color: black;
+  color: white;
+&__navigation {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  &__list {
+    &--item h5 {
+      margin: 0;
+    }
+    &--item div {
+      display: flex;
+      width: 80px;
+      margin: 0;
+      justify-content: space-between;
+    }
+
+    &--item div p {
+      margin: 0;
+    }
+    &--item div p a img {
+     width: 24px;
+     
+    }
+  }
+  &__list li a {
+    color: white;
+  }
+}
+}
+@media(min-width : 375px) {
+  .footer {
+ &__navigation {
+   display: flex;
+   justify-content: space-between;
+ }
+  }
+}
