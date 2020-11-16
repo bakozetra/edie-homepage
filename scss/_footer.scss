@@ -1,39 +1,114 @@
 .footer {
   background-color: black;
   color: white;
-&__navigation {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  &__list {
-    &--item h5 {
-      margin: 0;
-    }
-    &--item div {
-      display: flex;
-      width: 80px;
-      margin: 0;
-      justify-content: space-between;
-    }
+  padding-top: 2rem;
 
-    &--item div p {
-      margin: 0;
-    }
-    &--item div p a img {
-     width: 24px;
+  &__navigation {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+    &__list {
+      &--item h5 {
+        margin: 0;
+      }
+      &--link {
+        height: 128px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-around;
+        }
+       
+      &--link li a {
+        color: white;
+      }
+      &__item {
+      
+      }
      
+      &--item h5 {
+        font-size: 24px;
+        padding-bottom: 0.5rem;
+      }
+      &--item div {
+        display: flex;
+        width: 80px;
+        margin: 0;
+        justify-content: space-between;
+      }
+
+      &--item div p {
+        margin: 0;
+      }
+      &--item div p a img {
+        width: 24px;
+      }
+      &--label {
+        padding-bottom: 1rem;
+      }
+      &--label + div {
+        position: relative;
+        width: 292px;
+      }
+      &--label + div input {
+        border: none;
+        outline: none;
+        background: #f2f2f2;
+        height: 42px;
+        border-radius: 12px;
+        width: 291px;
+        margin-top: 1rem;
+      }
+      &--label + div  input + button {
+        background: #2d9cdb;
+        height: 39px;
+        width: 71px;
+        border-radius: 12px;
+        border: none;
+        position: absolute;
+        right: 0rem;
+        top: 1.25rem;
+        outline: none;
+       
+      }
+    }
+    &__list li a {
+      color: white;
     }
   }
-  &__list li a {
-    color: white;
+  &__name {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2rem;
+    text-align: center;
   }
 }
-}
-@media(min-width : 375px) {
+@media (min-width: 375px) {
   .footer {
- &__navigation {
-   display: flex;
-   justify-content: space-between;
- }
+    &__navigation {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      &__list {
+        &--label + input {
+          width: 350px;
+          height: 57px;
+        }
+        &--label + input + button {
+          width: 94px;
+          height: 49px;
+          right: 0.25rem;
+          top: 2.5rem;
+        }
+      }
+    }
+    &__name {
+      width: 80%;
+    }
+  }
+  label {
+    display: block;
   }
 }

@@ -1,40 +1,49 @@
 .sectionFirst {
-    max-width: 100%;
-    width: 90%;
-  
+  max-width: 100%;
+  width: 90%;
+  padding-bottom: 102px;
+  &__link {
+    color: #2D9CDB;
+    font-size: 18px;
+  }
   &__container {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     &--description {
       width: 70%;
+      font-size: 18px;
     }
     &--button {
       position: relative;
     }
+    &--button {
+      position: relative;
+        width: 292px;
+    }
     &--button > input {
-      height: 30px;
+      width: 291px;
+      height: 47px;
       border-radius: 10px;
       outline: none;
-      width: 250px;
       background: rgba(242, 242, 242, 1);
       border: none;
-     }
-     &--button > input:hover {
+    }
+    &--button > input:hover {
       border: blue 3px solid;
-     }
-     &--button > button {
+    }
+    &--button > button {
       position: absolute;
-      right: 12.25rem;
-      height: 30px;
-      width: 50px;
+      right: 0rem;
+      width: 71px;
+      height: 39px;
       background-color: blue;
       outline: none;
       border: none;
       border-radius: 10px;
       color: white;
-      top: 0.025rem;
-     }
+      top: 0.29rem;
+    }
   }
   &__head {
     font-size: 36px;
@@ -49,30 +58,27 @@
   }
 }
 
-@media(min-width : 375px) {
+@media (min-width: 375px) {
   .sectionFirst {
-  &__container {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    &--description {
+    &__container {
       width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      &--description {
+        width: 50%;
+      }
     }
-   
-  }
-  &__head {
-    font-size: 48px;
-    width: 80%;
-    line-height: 54px;
-    &--emotion {
-      width: 50%;
+    &__head {
+      font-size: 48px;
+      width: 80%;
+      line-height: 54px;
+      &--emotion {
+        width: 50%;
+      }
+    }
+    &__image {
+      width: 100%;
+      border-radius: 10px;
     }
   }
-  &__image {
-    width: 100%;
-    border-radius: 10px;
-  }
-
 }
-}
-

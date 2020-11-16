@@ -5,30 +5,41 @@
     max-width: 100%;
   }
   &__aside {
-    background: rgba(255, 255, 255, 1);
+    // background: rgba(255, 255, 255, 1);
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     height: 400px;
-    box-shadow:3px 3px 5px 6px #ccc ;
-    &--design >.link {
+    &--design > .link {
       background-color: blue;
     }
-
+    &--pen {
+      background-image: url(../assets/edit-24px.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &--front {
+      box-shadow: 3px 3px 5px 6px #ccc;
+    }
     &--front > .link {
-        background-color: yellow;
-        background: rgba(39, 174, 96, 1);
+      background: rgba(39, 174, 96, 1);
+       background-image: url(../assets/keyboard_arrow_left-24px.svg), url(../assets/keyboard_arrow_right-24px.svg);
+      background-repeat: no-repeat;
+      background-position: 4px , 15px 9px;
+       background-size: 2rem;
 
     }
     &--front > .link + h3 + p + button {
       background: rgba(45, 156, 219, 1);
-
+     
     }
-    &--back >.link {
+    &--back > .link {
       background: rgba(235, 87, 87, 1);
+      background-image: url(../assets/ic_storage_48px.svg);
+      background-position: center;
+  
+    }
 
-    } 
-    
     &--button {
       width: 50px;
       height: 50px;
@@ -54,18 +65,19 @@
     &--button + h3 + p {
       margin-left: 1rem;
       font-size: 16px;
-line-height: 24px;
+      line-height: 24px;
     }
-
-   }
-   &__aside button_link {
-    
-   }
-
+  }
+  &__aside button_link {
+  }
 }
-@media(min-width : 375px) {
+@media (min-width: 375px) {
   .sectionSecond {
     width: 80%;
+    &__head {
+      font-size: 36px;
+      width: 30%;
+    }
     &__container {
       display: flex;
     }
@@ -74,11 +86,9 @@ line-height: 24px;
       margin-left: auto;
       margin-right: auto;
       height: 400px;
-      box-shadow:3px 3px 5px 6px #ccc ;
+      // box-shadow:3px 3px 5px 6px #ccc ;
       border-radius: 10px;
       width: 300px;
     }
-
   }
-  
 }

@@ -85,6 +85,11 @@ section {
 .sectionFirst {
   max-width: 100%;
   width: 90%;
+  padding-bottom: 102px;
+}
+.sectionFirst__link {
+  color: #2D9CDB;
+  font-size: 18px;
 }
 .sectionFirst__container {
   width: 90%;
@@ -93,15 +98,20 @@ section {
 }
 .sectionFirst__container--description {
   width: 70%;
+  font-size: 18px;
 }
 .sectionFirst__container--button {
   position: relative;
 }
+.sectionFirst__container--button {
+  position: relative;
+  width: 292px;
+}
 .sectionFirst__container--button > input {
-  height: 30px;
+  width: 291px;
+  height: 47px;
   border-radius: 10px;
   outline: none;
-  width: 250px;
   background: #f2f2f2;
   border: none;
 }
@@ -110,15 +120,15 @@ section {
 }
 .sectionFirst__container--button > button {
   position: absolute;
-  right: 12.25rem;
-  height: 30px;
-  width: 50px;
+  right: 0rem;
+  width: 71px;
+  height: 39px;
   background-color: blue;
   outline: none;
   border: none;
   border-radius: 10px;
   color: white;
-  top: 0.025rem;
+  top: 0.29rem;
 }
 .sectionFirst__head {
   font-size: 36px;
@@ -162,25 +172,36 @@ section {
   max-width: 100%;
 }
 .sectionSecond__aside {
-  background: white;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   height: 400px;
-  box-shadow: 3px 3px 5px 6px #ccc;
 }
 .sectionSecond__aside--design > .link {
   background-color: blue;
 }
+.sectionSecond__aside--pen {
+  background-image: url(/edit-24px.eca6e464.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sectionSecond__aside--front {
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
 .sectionSecond__aside--front > .link {
-  background-color: yellow;
   background: #27ae60;
+  background-image: url(/keyboard_arrow_left-24px.8b12faa5.svg), url(/keyboard_arrow_right-24px.70eea296.svg);
+  background-repeat: no-repeat;
+  background-position: 4px, 15px 9px;
+  background-size: 2rem;
 }
 .sectionSecond__aside--front > .link + h3 + p + button {
   background: #2d9cdb;
 }
 .sectionSecond__aside--back > .link {
   background: #eb5757;
+  background-image: url(/ic_storage_48px.76158356.svg);
+  background-position: center;
 }
 .sectionSecond__aside--button {
   width: 50px;
@@ -213,6 +234,10 @@ section {
   .sectionSecond {
     width: 80%;
   }
+  .sectionSecond__head {
+    font-size: 36px;
+    width: 30%;
+  }
   .sectionSecond__container {
     display: flex;
   }
@@ -221,7 +246,6 @@ section {
     margin-left: auto;
     margin-right: auto;
     height: 400px;
-    box-shadow: 3px 3px 5px 6px #ccc;
     border-radius: 10px;
     width: 300px;
   }
@@ -346,6 +370,7 @@ section {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 203px;
 }
 .aside__description {
   font-size: 24px;
@@ -371,20 +396,37 @@ section {
     margin-right: auto;
   }
   .aside__description {
-    width: 50%;
+    width: 70%;
+    font-size: 36px;
   }
 }
 .footer {
   background-color: black;
   color: white;
+  padding-top: 2rem;
 }
 .footer__navigation {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 2rem;
 }
 .footer__navigation__list--item h5 {
   margin: 0;
+}
+.footer__navigation__list--link {
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+}
+.footer__navigation__list--link li a {
+  color: white;
+}
+.footer__navigation__list--item h5 {
+  font-size: 24px;
+  padding-bottom: 0.5rem;
 }
 .footer__navigation__list--item div {
   display: flex;
@@ -398,14 +440,66 @@ section {
 .footer__navigation__list--item div p a img {
   width: 24px;
 }
+.footer__navigation__list--label {
+  padding-bottom: 1rem;
+}
+.footer__navigation__list--label + div {
+  position: relative;
+  width: 292px;
+}
+.footer__navigation__list--label + div input {
+  border: none;
+  outline: none;
+  background: #f2f2f2;
+  height: 42px;
+  border-radius: 12px;
+  width: 291px;
+  margin-top: 1rem;
+}
+.footer__navigation__list--label + div input + button {
+  background: #2d9cdb;
+  height: 39px;
+  width: 71px;
+  border-radius: 12px;
+  border: none;
+  position: absolute;
+  right: 0rem;
+  top: 1.25rem;
+  outline: none;
+}
 .footer__navigation__list li a {
   color: white;
+}
+.footer__name {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2rem;
+  text-align: center;
 }
 
 @media (min-width: 375px) {
   .footer__navigation {
+    width: 80%;
     display: flex;
     justify-content: space-between;
+  }
+  .footer__navigation__list--label + input {
+    width: 350px;
+    height: 57px;
+  }
+  .footer__navigation__list--label + input + button {
+    width: 94px;
+    height: 49px;
+    right: 0.25rem;
+    top: 2.5rem;
+  }
+  .footer__name {
+    width: 80%;
+  }
+
+  label {
+    display: block;
   }
 }
 
